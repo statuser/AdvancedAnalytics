@@ -63,4 +63,18 @@ mynewfile
 Now try typing `ls -la` into the terminal
 ```
 ~$ ls -la
-
+total 40
+drwxr-xr-x 3 jrhowell jrhowell 4096 Nov 11 09:36 ./
+drwxr-xr-x 3 root     root     4096 Nov 11 08:04 ../
+-rw-r--r-- 1 jrhowell jrhowell   33 Nov 11 09:35 .bash_aliases
+-rw------- 1 jrhowell jrhowell  100 Nov 11 09:35 .bash_history
+-rw-r--r-- 1 jrhowell jrhowell  220 Nov 11 08:04 .bash_logout
+-rw-r--r-- 1 jrhowell jrhowell 3771 Nov 11 08:04 .bashrc
+-rw-r--r-- 1 jrhowell jrhowell    0 Nov 11 09:36 .hushlogin
+drwxr-xr-x 2 jrhowell jrhowell 4096 Nov 11 08:05 .landscape/
+-rw-r--r-- 1 jrhowell jrhowell    0 Nov 11 08:05 .motd_shown
+-rw-r--r-- 1 jrhowell jrhowell  807 Nov 11 08:04 .profile
+-rw------- 1 jrhowell jrhowell 6105 Nov 11 09:35 .viminfo
+```
+	
+Your output might look slightly different from mine based since we have different usernames and we might have slightly different files.
