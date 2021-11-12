@@ -12,7 +12,7 @@ Each of these steps will ahve multiple substeps that you should follow along wit
 
 ## Set up the command line
 
-_We will be loosely following the instructions found at: [Best Practices for Setting up WSL](https://docs.microsoft.com/en-us/windows/wsl/setup/environment) from Microsoft.
+_We will be loosely following the instructions found at: [Best Practices for Setting up WSL](https://docs.microsoft.com/en-us/windows/wsl/setup/environment) from Microsoft._
 
 Before we can get started with the rest of the setup we need to set up our commadn line environment.  For this class we will be using a UNIX based command line environment.  This is for a couple of reasons.  The first is that it will ensure a consistent environment for both Windows and Mac users so we can use the same commands and instructions.  (Mac is a UNIX based operating system.)  For Windows we can use the "Windows Subsystem for Linux" to provide a Linux based environment on top our our Windows OS.  Microsoft developed and supports this environment to all Windows customers mainly because of web developers.  The second reason is that nearly all webservers run Linux and so all the tools and technologies that are used on those servers work best in that environment.  It is best practice to have your local development environment match the server environment as close as possible to minimize the chance of hard to diagnose bugs, errors, and misconfigurations.
 
@@ -20,7 +20,7 @@ To setup the commadn line environment you will need to:
 
 > Open a PowerShell prompt as an administrator
 	
-![Steps to open Power Shell as administrator](http://Link to file)
+![Steps to open Power Shell as administrator](https://github.com/statuser/MBA656AdvancedAnalytics/blob/a6e1f64e78ae4442ccc5e23dbbee65f486127856/Open%20Power%20Shell.gif?raw=true | width=250)
 
 > Type `wsl --install` in to the newly opened PowerShell
 > Wait for the install to complete then reboot
@@ -174,6 +174,8 @@ As you are going through the install pay attention to the following options:
 * On the page to **Select Additional Tasks** during the installation check the **Add to PATH** option so you can easily open files and folders from your Linux Command prompt using the `code` command.
 
 * Install the [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).  This extension pack includes the Remote - WSL extension allowing you to open any folder on your machine or over a network include those folders in your Linux File System.
+
+![Install WSL Steps](https://github.com/statuser/MBA656AdvancedAnalytics/blob/a6e1f64e78ae4442ccc5e23dbbee65f486127856/Install%20Remote%20Cote%20-WSL.gif?raw=true | size=250)
 
 Visual Studio Code has a nice interactive getting started program.  If you are not familiar with Text Editors or IDEs and want to investigate the different features that are available I would recommend that you go through the "Getting Started" carefully.
 
