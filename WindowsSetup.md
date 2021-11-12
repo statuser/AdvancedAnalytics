@@ -20,7 +20,7 @@ To setup the commadn line environment you will need to:
 
 > Open a PowerShell prompt as an administrator
 	
-![Steps to open Power Shell as administrator](https://github.com/statuser/MBA656AdvancedAnalytics/blob/a6e1f64e78ae4442ccc5e23dbbee65f486127856/Open%20Power%20Shell.gif?raw=true | width=250)
+![Steps to open Power Shell as administrator](https://github.com/statuser/MBA656AdvancedAnalytics/blob/a6e1f64e78ae4442ccc5e23dbbee65f486127856/Open%20Power%20Shell.gif?raw=true)
 
 > Type `wsl --install` in to the newly opened PowerShell
 > Wait for the install to complete then reboot
@@ -175,7 +175,7 @@ As you are going through the install pay attention to the following options:
 
 * Install the [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).  This extension pack includes the Remote - WSL extension allowing you to open any folder on your machine or over a network include those folders in your Linux File System.
 
-![Install WSL Steps](https://github.com/statuser/MBA656AdvancedAnalytics/blob/a6e1f64e78ae4442ccc5e23dbbee65f486127856/Install%20Remote%20Cote%20-WSL.gif?raw=true | size=250)
+![Install WSL Steps](https://github.com/statuser/MBA656AdvancedAnalytics/blob/a6e1f64e78ae4442ccc5e23dbbee65f486127856/Install%20Remote%20Cote%20-WSL.gif?raw=true)
 
 Visual Studio Code has a nice interactive getting started program.  If you are not familiar with Text Editors or IDEs and want to investigate the different features that are available I would recommend that you go through the "Getting Started" carefully.
 
