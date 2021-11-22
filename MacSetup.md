@@ -198,7 +198,7 @@ This creates a src folder, changes the current directory to that source folder a
 Let's change to to this directory and activate our virtual environment.
 
 ```bash
-cd ~/src/CSDashBoard
+cd ~/src/CSDashboard
 mkvirtualenv CSDashboard
 ```
 
