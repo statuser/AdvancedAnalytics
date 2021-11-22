@@ -56,4 +56,51 @@ def student(name=None): \
 
 This will add a new blank student route and set the default student name to None which is Python for missing.
   
-  
+## Implementing a better student profile
+
+There are a lot of pieces to the application that need to come together before we have a complete program.  Some times it is hard to figure out where to start.  We need to program the user interface, setup security, install and load a database, etc.  It is not a good idea to try to do all these thigns at once however.  we are likely to introduce so many bugs that it becomes very diffucult to fix them all.  A better solution it to address small pieces of the application at a time and quickly test that small part, fix the bugs, and then move on to the next piece.   There are times however where one part of the application will depend on a different part.  In these cases we need to set up _scaffolding_ in order to properly implement the part we are working on.  (_Scaffolding_ will also become useful when we start automatically testing our code.)
+
+### Scaffolding
+
+Scaffoldign is small pieces of temporary code that we write in order to mimic a larger system that we have not yet written.  For example, we haven't started working on the database for our program yet, but our webpages will need data from the database in order to know what to display.  If we want to start with the user interface, then we need to build scaffolding to mimic the database output that we expect to add later.  
+
+Let's take a look at the student profile page that we are expecting to build:
+
+![Student information Block](https://user-images.githubusercontent.com/2736768/142936694-9ef06e78-dd3b-4a9c-acdd-e604c947dacb.png)
+
+For this block we will need to pull the following information from the database:
+* Student Name (Maybe First and Last separately)
+* Student's Class
+* Student's Mentor
+* Interest
+* Profile Image
+
+In addition to the database information there is an edit icon for the student profile block.  We also have a navigation header with a ..., search button, and a bell icon.
+
+We first want to decide what we can make static for now and what we definitely want to pull from the database.
+
+For now let's just use the information from teh bullet points in the list above.  We will want to build the database scaffolding to contain at least those five elements. The data will eventually be contained in a user object, but we can mimic that structure for now with a dictionary.
+
+We will put the scaffolding in the student route since this is where the datbase call will go to load the student.
+
+```Python
+@app.route("/student")
+@app.route('/student/<studentID>')
+def student(studentId):
+    # Load the student data from the database
+    # student = load student from database
+    student = {
+        'firstName' : 'Sophie',
+        'lastName' : 'Rose',
+        'class' : '2022',
+        'mentor' : 'Jon Kent',
+        'interest' : 'Tech',
+        'profileImage' : 'https://source.unsplash.com/Av_NirIguEc/600x600'
+    }
+    # Send the data to webpage to render
+    return render_template("student.jinja", title="Student Page", student=student)
+```
+
+
+We now have the scaffolding in place to start working on the html page.
+
