@@ -104,3 +104,51 @@ def student(studentId):
 
 We now have the scaffolding in place to start working on the html page.
 
+### Develop HTML
+
+We can start buildign the HTML for the page now.  
+
+We will open the `student.jinja` and add in the code for the to match the card.
+
+There are a couple of things that we want to keep in mind as we write the html.  The first is called a separation of concerns.  This means that we want to separate out the content from the visual styling.  We will eventually be adding dynamic elements to the page which we also want to isolate in it's own file.  For know we are just going to focus on the content.
+
+```HTML
+{% extends "base.jinja" %}
+
+{% block content %}
+    <div id="profile_block" class = "content_block">
+        <p>Edit Icon</p>
+        <div class="profile_image">
+            <img src="{{ student.profileImage }}"/>
+        </div>
+        <div class="text-block">
+        <h3>{{ student.firstName }} {{ student.lastName }}</h3>
+        <ul class="student_details">
+            <li><span class="text_label">Class:</span> {{ student.class }} </li>
+            <li><span class="text_label">Track:</span> {{ student.track }} </li>
+            <li><span class="text_label">Mentor:</span> {{ student.mentor }} </li>
+            <li><span class="text_label">Interest:</span> {{ student.interest }} </li> 
+        </ul>
+    </div>
+
+
+
+{% endblock content %}
+```
+
+This will give us the basic outline of the HTML page.  When we wrote the HTML page we have also included the basic hooks that will allow us to include CSS to style the page.
+
+### CSS Styling
+
+We will need to set up something in our project before we can use CSS files in our project.  The first thing is that we will need to create a folder for the css files.  Flask has a special folder for storing files that are stitic meaning they do not change.  We will need to create a foler called "static" under our "app" folder.  Flask will not process anything in that folder, but simply display it as it is.  This is a great place for .css files, JavaScript files, and logos or other prictures that are a part of our application.
+
+Create a file called `student.css` in the static folder and then open it in Visual Studio Code.  When we are working on HTML and CSS files it is often nice to have both showing at the same time.  Right Click on the student.css tab and select "Split Horizontally". This way we can see the hooks in the HTML file and the CSS file at the same time.
+
+We will need to edit the base.jinja template to include the stylesheet.  Add the following code inside the HEAD tag in the base.jinja file.
+```HTML
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}>
+```
+
+We can now start adding the .css to style the page.
+
+Pull a lot of the styling from Figma
