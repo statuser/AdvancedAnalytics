@@ -2,14 +2,20 @@
 
 When we are doing Python development we will be primarily using two tools.  The first is a text editor called Visual Studio and the second is a built in Mac program called "Terminal".  Terminal is the command line for the Mac and is where we can type in a execute commands.  This may feel a little strange at first, but you will find that it is much faster and more precise for many of the development tasks that we will be doing.
 
-There are two ways to open the Terminal.  The first is to open it by going to Applications>Utilities>Terminal.  The second, my preferred way, is to use spotlight.  Press the ⌘+Space shortcut to invoke spotlight search and then typing "Terminal" and pressing Enter.  This will launch the Terminal application.
+There are two ways to open the Terminal.  The first is to open it by going to 
 
-**Insert GIF Demo Here**
+Applications>Utilities>Terminal.  
+
+The second, my preferred way, is to use Spotlight.  Press the ⌘+Space shortcut to invoke spotlight search and then typing "Terminal" and pressing Enter.  This will launch the Terminal application.
+
 
 ## Set up the command line
 
-Before we can get started with the rest of the setup we need to set up our command line environment.  For this class we will be using a UNIX based command line environment.  This is for a couple of reasons.  The first is that it will ensure a consistent environment for both Windows and Mac users so we can use the same commands and instructions.  (Mac is a UNIX based operating system.)  For Windows we can use the "Windows Subsystem for Linux" to provide a Linux based environment on top our our Windows OS.  Microsoft developed and supports this environment to all Windows customers mainly because of web developers.  The second reason is that nearly all webservers run Linux and so all the tools and technologies that are used on those servers work best in that environment.  It is best practice to have your local development environment match the server environment as close as possible to minimize the chance of hard to diagnose bugs, errors, and misconfigurations.
+Before we can get started with the rest of the setup we need to set up our command line environment.  For this class we will be using a UNIX based command line environment.  This is for a couple of reasons.  The first is that it will ensure a consistent environment for both Windows and Mac users so we can use the same commands and instructions.  (Mac is a UNIX based operating system.)  
 
+ The second reason is that nearly all web servers run Linux and so all the tools and technologies that are used on those servers work best in that environment.  It is best practice to have your local development environment match the server environment as close as possible to minimize the chance of hard to diagnose bugs, errors, and misconfigurations.
+
+### Learning the Command Line
  You can now issue your first command by typing `touch ~/.hidden_file`
 	
 This will create a file in your home directory.
@@ -34,21 +40,26 @@ Now try typing `ls -la` into the terminal
 ```bash
 ls -la
 ```
-> total 40
-> drwxr-xr-x 3 jrhowell jrhowell 4096 Nov 11 09:36 ./
-> drwxr-xr-x 3 root     root     4096 Nov 11 08:04 ../
-> -rw-r--r-- 1 jrhowell jrhowell   33 Nov 11 09:35 .bash_aliases
-> -rw------- 1 jrhowell jrhowell  100 Nov 11 09:35 .bash_history
-> -rw-r--r-- 1 jrhowell jrhowell  220 Nov 11 08:04 .bash_logout
-> -rw-r--r-- 1 jrhowell jrhowell 3771 Nov 11 08:04 .bashrc
-> -rw-r--r-- 1 jrhowell jrhowell    0 Nov 11 09:36 .hushlogin
-> drwxr-xr-x 2 jrhowell jrhowell 4096 Nov 11 08:05 .landscape/
-> -rw-r--r-- 1 jrhowell jrhowell    0 Nov 11 08:05 .motd_shown
-> -rw-r--r-- 1 jrhowell jrhowell  807 Nov 11 08:04 .profile
-> -rw------- 1 jrhowell jrhowell 6105 Nov 11 09:35 .viminfo
+
+
+>total 8
+>drwxr-x---+ 14 jhowell  staff   448 Sep  8 10:45 .
+>drwxr-xr-x   5 root     admin   160 Sep  8 07:20 ..
+>-r--------   1 jhowell  staff     7 Sep  8 07:22 .CFUserTextEncoding
+>drwx------+  2 jhowell  staff    64 Sep  8 07:27 .Trash
+>-rw-r--r--   1 jhowell  staff     0 Sep  8 10:45 .hidden_file
+>drwx------   3 jhowell  staff    96 Sep  8 10:40 .zsh_sessions
+>drwx------+  3 jhowell  staff    96 Sep  8 07:20 Desktop
+>drwx------+  3 jhowell  staff    96 Sep  8 07:20 Documents
+>drwx------+  3 jhowell  staff    96 Sep  8 07:20 Downloads
+>drwx------@ 65 jhowell  staff  2080 Sep  8 08:23 Library
+>drwx------   3 jhowell  staff    96 Sep  8 07:20 Movies
+>drwx------+  3 jhowell  staff    96 Sep  8 07:20 Music
+>drwx------+  4 jhowell  staff   128 Sep  8 08:29 Pictures
+>drwxr-xr-x+  4 jhowell  staff   128 Sep  8 07:20 Public
 
 	
-Your output might look slightly different from mine based since we have different usernames and we will have different files.  This command users the _-la_ options for the ls command.  Options are different from arguments.  Options control how the command run and are also prefereced by either a single or a double dash.  (In general use a single dash for single letter options and a double dash for long form word length options.). The _l_ options tells `ls` to display the results in long format and the _a_ option says to display all the files rather than just the visible ones.  I could also have written `ls -l -a` or `ls -l --all` to get the same output.
+Your output might look slightly different from mine based since we have different usernames and we will have different files.  This command users the _-la_ options for the ls command.  Options are different from arguments.  Options control how the command run and are also prefaced by either a single or a double dash.  (In general use a single dash for single letter options and a double dash for length options.). The _l_ options tells `ls` to display the results in long format and the _a_ option says to display all the files rather than just the visible ones.  I could also have written `ls -l -a` or `ls -l --all` to get the same output.
 
 If I wanted help on a specific command you can use the option `--help` to a list of arguments and options available for the command or `man ls` to get the manual page for the command.  (Usually it is easier to use Google for specific help rather than reading the man page.)
 
@@ -68,7 +79,7 @@ The next step in the process is to install the command line tools for developmen
 sudo xcode-select --install
 ```
 
-There are a couple of intersting things going on with this command.  The first is _sudo_.  This command takes as an argument an additional command and runs it as an administrator.  In Unix based systems it is generally considered best practices to run programs and issue commands using the most restricted user possible.  This makes sure that your environment remains secure.  However if you are going to update the operating system you need access to all files and programs.  For that reason there is a special way to elevate your user privileges  to preform specific commands; _sudo_ is the command that allows that. The second thing is that this command runs an actually Mac program rather than just a command for the command.  
+There are a couple of interesting things going on with this command.  The first is _sudo_.  This command takes as an argument an additional command and runs it as an administrator.  In Unix based systems it is generally considered best practices to run programs and issue commands using the most restricted user possible.  This makes sure that your environment remains secure.  However if you are going to update the operating system you need access to all files and programs.  For that reason there is a special way to elevate your user privileges  to preform specific commands; _sudo_ is the command that allows that. The second thing is that this command runs an actually Mac program rather than just a command for the command.  
 
 Alternatively we could simple download and install the XCode program from the Mac App Store.  This is a much larger program and is only really useful if you are planning on developing Mac or iOS apps.
 
@@ -79,7 +90,7 @@ git config --global user.name "<Your Name>"
 git config --global user.email "<Your Email>"
 ```
 
-This will set up git so that your name and email are attached to to each commit you make automatically.  This way we can tell who made each change to the code.  You can override this on a commit by commit basis, but if we are going to change somebody else's code it is nice to be able to easily identify and contact the person originally responsible for the code so we can make sure we don't introduce a bug or break a feature that they have added.
+This will set up a program called "git" so that your name and email are automatically attached to each command you issue.  Git is a program for tracking changes in files and allowing multiple people to work on the same set of code at a time.  This way we can tell who made each change to the code.  You can override this on a commit by commit basis, but if we are going to change somebody else's code it is nice to be able to easily identify and contact the person originally responsible for the code so we can make sure we don't introduce a bug or break a feature that they have added.
 
 ### Set up an account on GitHub
 
@@ -101,11 +112,11 @@ SQLite does not need to be installed since it is already present on your system.
 
 For this class, we will use Visual Studio Code (**Not Visual Studio**) as our text editor.  It have excellent Python support and is well integrated with the Mac command line.
 
-To install, visit the [VS Code install page](https://code.visualstudio.com/download) and select the appropriate installer.  (If you have a relatively recent computer the 64-bit installer is the correct one.). You should install this by dragging the program from your Downloads folder to you Applications folder.
+To install, visit the [VS Code install page](https://code.visualstudio.com/download) and select Mac. You should install this by dragging the program from your Downloads folder to you Applications folder.
 
-When you open Visual Studion for the first time , it opens a nice interactive getting started program.  If you are not familiar with Text Editors or IDEs and want to investigate the different features that are available I would recommend that you go through the "Getting Started" carefully.
+When you open Visual Studio for the first time , it opens a nice interactive getting started program.  If you are not familiar with Text Editors or IDEs and want to investigate the different features that are available I would recommend that you go through the "Getting Started" carefully.
 
-We want to make one final configuration to Visual Studio Code for now.  It would be really nice do be able to start up Visual Studion Code from the command line.  In order to do this we need to let the command line know that it exists.  We can do that by:
+We want to make one final configuration to Visual Studio Code for now.  It would be really nice do be able to start up Visual Studio Code from the command line.  In order to do this we need to let the command line know that it exists.  We can do that by:
 
 > In Visual Studio Code press ⌘+⇧+P
 > Type in `Shell Command` to search for the command to "Install 'code' command in PATH"
@@ -116,7 +127,7 @@ We can now open Visual Studio Code by issuing the `code` command from anywhere i
 
 ## Install Python
 
-There are many ways to install Python and get it working in your Mac program. (In fact there is already a version of Python installed on MacOS.) The different methods all have their pros and cons.  One of the problems when working with a lot of different projects is that each project could depend on different external bits of code called modules or on different versions of Python.  If you update Python for one project, it could break another project without you knowing it.  In addition you could have conflicts in the external packages, called dependencies, that you are going to use.  One additional thing to consider is that when you upload your code to a server you need to upload all the dependencies as well. When install all your dependencies in a single place you could end up uploading unnecessary dependencies with your project.  To get around these problems we are going to use someting called virtual environments.  This will give us a separate Python version and set of dependencies for each program that you write.  This is a good practice even though this may be the only program that you work on.
+There are many ways to install Python and get it working in your Mac program. (In fact there is already a version of Python installed on MacOS.) The different methods all have their pros and cons.  One of the problems when working with a lot of different projects is that each project could depend on different external bits of code called modules or on different versions of Python.  If you update Python for one project, it could break another project without you knowing it.  In addition you could have conflicts in the external packages, called dependencies, that you are going to use.  One additional thing to consider is that when you upload your code to a server you need to upload all the dependencies as well. When you install all your dependencies in a single place you could end up uploading unnecessary dependencies with your project.  To get around these problems we are going to use something called virtual environments.  This will give us a separate Python version and set of dependencies for each program that you write.  This is a good practice even though this may be the only program that you work on.
 
 ### Install Pyenv for virtual Python Environments
 
@@ -210,4 +221,4 @@ if you ever want to deactivate the virtual environment so you can work update th
 
 # Opening the project in Visual Studio Code
 
- In Visual Studio select File> Open Folder or type  `⌘+⇧+P File: Open Folder`.  Navigate to the CSDahboard Folder and click Open.
+ In Visual Studio select File> Open Folder or type  `⌘+⇧+P File: Open Folder`.  Navigate to the CSDashboard Folder and click Open.
