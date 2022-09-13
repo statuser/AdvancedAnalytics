@@ -112,7 +112,9 @@ We will open the `student.jinja` and add in the code for the to match the card.
 
 There are a couple of things that we want to keep in mind as we write the html.  The first is called a separation of concerns.  This means that we want to separate out the content from the visual styling.  We will eventually be adding dynamic elements to the page which we also want to isolate in it's own file.  For know we are just going to focus on the content.
 
+
 ```HTML
+{% raw %}
 {% extends "base.jinja" %}
 
 {% block content %}
@@ -130,10 +132,8 @@ There are a couple of things that we want to keep in mind as we write the html. 
             <li><span class="text_label">Interest:</span> {{ student.interest }} </li> 
         </ul>
     </div>
-
-
-
 {% endblock content %}
+{% endraw %}
 ```
 
 This will give us the basic outline of the HTML page.  When we wrote the HTML page we have also included the basic hooks that will allow us to include CSS to style the page.
