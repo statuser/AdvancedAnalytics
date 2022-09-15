@@ -44,8 +44,8 @@ The name of the variable is the human readable method for referring to a specifi
 > #### How computers use variables
 > When a program is run, the computer will convert all variables names into a numeric code that refers to a specific address in RAM.  Just like physical addresses, computer addresses refer to a specific physical location. Because each location can only store one specific thing, variables can only store a single piece of information.  
 > 
-> Variables are stored in a table like structure that holds:
-> Example of Variable storage
+> Variables are stored in a table like structure that holds:  
+> Example of Variable storage  
 |Name	 | Type (length) | Address in RAM (Memory) | Value |
 |--------|---------------|-------------------------|-------|
 |dog_age | int (8)       | AC3F760D                | 3     |
