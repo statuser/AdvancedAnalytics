@@ -8,13 +8,13 @@ There are five main steps that we will take to set up our windows environment fo
 4. Install Python
 5. Set up a Visual Studio Code to use as a text editor
 
-Each of these steps will have multiple substeps that you should follow along with exactly.  As you go through this process you will not only learn how to use the command line better, but we can ensure that everybody is working with the same environment so errors and problems are easier to find.
+Each of these steps will have multiple sub-steps that you should follow along with exactly.  As you go through this process you will not only learn how to use the command line better, but we can ensure that everybody is working with the same environment so errors and problems are easier to find.
 
 ## Set up the command line
 
 _We will be loosely following the instructions found at: [Best Practices for Setting up WSL](https://docs.microsoft.com/en-us/windows/wsl/setup/environment) from Microsoft._
 
-Before we can get started with the rest of the setup we need to set up our command line environment.  For this class we will be using a UNIX based command line environment.  This is for a couple of reasons.  The first is that it will ensure a consistent environment for both Windows and Mac users so we can use the same commands and instructions.  (Mac is a UNIX based operating system.)  For Windows we can use the "Windows Subsystem for Linux" to provide a Linux based environment on top our our Windows OS.  Microsoft developed and supports this environment to all Windows customers mainly because of web developers.  The second reason is that nearly all webservers run Linux and so all the tools and technologies that are used on those servers work best in that environment.  It is best practice to have your local development environment match the server environment as close as possible to minimize the chance of hard to diagnose bugs, errors, and misconfigurations.
+Before we can get started with the rest of the setup we need to set up our command line environment.  For this class we will be using a UNIX based command line environment.  This is for a couple of reasons.  The first is that it will ensure a consistent environment for both Windows and Mac users so we can use the same commands and instructions.  (Mac is a UNIX based operating system.)  For Windows we can use the "Windows Subsystem for Linux" to provide a Linux based environment on top our our Windows OS.  Microsoft developed and supports this environment to all Windows customers mainly because of web developers.  The second reason is that nearly all web servers run Linux and so all the tools and technologies that are used on those servers work best in that environment.  It is best practice to have your local development environment match the server environment as close as possible to minimize the chance of hard to diagnose bugs, errors, and misconfigurations.
 
 To setup the command line environment you will need to:
 
@@ -22,34 +22,39 @@ To setup the command line environment you will need to:
 	
 ![Steps to open Power Shell as administrator](https://github.com/statuser/MBA656AdvancedAnalytics/blob/a6e1f64e78ae4442ccc5e23dbbee65f486127856/Open%20Power%20Shell.gif?raw=true)
 
-> Type `wsl --install` in to the newly opened PowerShell
-> Wait for the install to complete then reboot
-> The Linux terminal windows called 'Ubuntu' should automatically open when your computer reboots
->> Choose a unix username
->> Choose a unix password
+Type or copy and paste the command below on the command line then follow the instructions.
+```bash
+wsl --install
+```
+The Linux terminal windows called 'Ubuntu' should automatically open when your computer reboots.  If you need to open it later there is a Ubuntu application that you can run from the start menu.  
+
+> Choose a unix username  
+> Choose a unix password  
+Your password will not show anything when you type it in.  Not even **.
 
 You now have a Linux operating system installed as a Windows app called "Ubuntu". Ubuntu (oo·boon·too) is the most common flavor of Linux and is widely used to host web applications.  You do not have a full version of Ubuntu, but the smallest set available that will allow you to run commands on a command line.
 
 One advantage is that you can share files between the Windows and Linux environment so you can use both Windows and Linux programs with the files.
 
 You can now issue your first command by typing `touch /home/<userusername>/.hushlogin`
-	
+
 This will create a file in your home directory that prevents Ubuntu from displaying the full information for the system when you first login for the day.
 
 A few important points:
 
 1. `touch` is a "command." It will create the file given by the argument if it doesn't already exist.  If it does exist it will just update the last modified date to the current date and time.
+
 2. /home/<username>/.hushlogin is the argument.  In this case it is the location of the file you want to create.  (As a convention, whenever you need to "fill in the blank" with information specific to your computer we will use `< >` to denote the information that you need to provide.)
-	
-	Alternatively we could have used `~/.hushlogin` as a shortcut.  `~` is a built in alias for "my home directory."
+
+Alternatively we could have used `~/.hushlogin` as a shortcut.  `~` is a built in alias for "my home directory."
+
 3. Notice that the file _.hushlogin_ starts with a ".".  This signifies that the file is a hidden file.  By default it won't be displayed when we ask for a list of files.
 
 We can list files with the `ls` command. Type the command into the terminal.
 
-```
+```bash
 ls
-````
-> 
+```
 
 We should be getting no output since we do not have any visible files in our home folder yet.
 
@@ -67,19 +72,18 @@ Now try typing `ls -la` into the terminal
 ls -la
 ```
 > total 40
-> drwxr-xr-x 3 jrhowell jrhowell 4096 Nov 11 09:36 ./
-> drwxr-xr-x 3 root     root     4096 Nov 11 08:04 ../
-> -rw-r--r-- 1 jrhowell jrhowell   33 Nov 11 09:35 .bash_aliases
-> -rw------- 1 jrhowell jrhowell  100 Nov 11 09:35 .bash_history
-> -rw-r--r-- 1 jrhowell jrhowell  220 Nov 11 08:04 .bash_logout
-> -rw-r--r-- 1 jrhowell jrhowell 3771 Nov 11 08:04 .bashrc
-> -rw-r--r-- 1 jrhowell jrhowell    0 Nov 11 09:36 .hushlogin
-> drwxr-xr-x 2 jrhowell jrhowell 4096 Nov 11 08:05 .landscape/
-> -rw-r--r-- 1 jrhowell jrhowell    0 Nov 11 08:05 .motd_shown
-> -rw-r--r-- 1 jrhowell jrhowell  807 Nov 11 08:04 .profile
-> -rw------- 1 jrhowell jrhowell 6105 Nov 11 09:35 .viminfo
+> drwxr-xr-x 3 jrhowell jrhowell 4096 Nov 11 09:36 ./  
+> drwxr-xr-x 3 root     root     4096 Nov 11 08:04 ../  
+> -rw-r--r-- 1 jrhowell jrhowell   33 Nov 11 09:35 .bash_aliases  
+> -rw------- 1 jrhowell jrhowell  100 Nov 11 09:35 .bash_history  
+> -rw-r--r-- 1 jrhowell jrhowell  220 Nov 11 08:04 .bash_logout  
+> -rw-r--r-- 1 jrhowell jrhowell 3771 Nov 11 08:04 .bashrc  
+> -rw-r--r-- 1 jrhowell jrhowell    0 Nov 11 09:36 .hushlogin  
+> drwxr-xr-x 2 jrhowell jrhowell 4096 Nov 11 08:05 .landscape/  
+> -rw-r--r-- 1 jrhowell jrhowell    0 Nov 11 08:05 .motd_shown  
+> -rw-r--r-- 1 jrhowell jrhowell  807 Nov 11 08:04 .profile  
+> -rw------- 1 jrhowell jrhowell 6105 Nov 11 09:35 .viminfo  
 
-	
 Your output might look slightly different from mine based since we have different usernames and we might have slightly different files.  This command users the _-la_ options for the ls command.  Options are different from arguments.  Options control how the command run and are invoked by either a single or a double dash.  (In general use a single dash for single letter options and a double dash for long form word length options.). The _l_ options tells `ls` to display the results in long format and the _a_ option says to display all the files rather than just the visible ones.  I could also have written `ls -l -a` or `ls -l --all` to get the same output.
 
 If I wanted help on a specific command you can use the option `--help` to a list of arguments and options available for the command or `man ls` to get the manual page for the command.  (Usually it is easier to use Google for specific help rather than reading the man page.)
@@ -98,7 +102,7 @@ sudo apt update && sudo apt upgrade
 ...
 ```
 
-There are a couple of intersting things going on with this command.  The first is _sudo_.  This command takes as an argument an additional command and runs it as an administrator.  In Unix based systems it is generally considered best practices to run programs and issue commands using the most restricted user possible.  This makes sure that your environment remains secure.  However if you are going to update the operating system you need access to all files and programs.  For that reason there is a special way to elevate your user privileges  to preform specific commands; _sudo_ is the command that allows that.
+There are a couple of interesting things going on with this command.  The first is _sudo_.  This command takes as an argument an additional command and runs it as an administrator.  In Unix based systems it is generally considered best practices to run programs and issue commands using the most restricted user possible.  This makes sure that your environment remains secure.  However if you are going to update the operating system you need access to all files and programs.  For that reason there is a special way to elevate your user privileges  to preform specific commands; _sudo_ is the command that allows that.
 
 The command _apt_ is the Ubuntu package manager.  You can think of it as the command to access the Ubuntu app store.  The argument _update_ tells the program to update the list of available packages and programs.  The argument _upgrade_ tells the app store to upgrade all the installed programs to their latest version.
 
@@ -147,6 +151,8 @@ In order to use GitHub from your command line you will need to authenticate by r
 ```bash
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
 ```
+
+[Logging in to GitHub from the commandline](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
 ## Set up a development database
 
@@ -265,6 +271,8 @@ export WORKON_HOME=$HOME/.virtualenvs
 . $(pyenv prefix)/bin/virtualenvwrapper.sh
 EOT
 ```
+
+You will need to reboot the Ubuntu shell again.
 
 Before we activate our virtual environment we should clone the project repository.  There is a directory structure that I like to use that will be demonstrated in the code below.  Feel free to modify the directories below to match your preferences.  I like to have a "src" directory in my home directory that contains all my programming projects.  With in the source directory I have a folder for each individual project that is managed as a git repository.  
 
