@@ -46,10 +46,10 @@ The name of the variable is the human readable method for referring to a specifi
 > 
 > Variables are stored in a table like structure that holds:
 > Example of Variable storage
-> |Name	   | Type (length) | Address in RAM (Memory) | Value |
-> |--------|---------------|-------------------------|-------|
-> |dog_age | int (8)       | AC3F760D                | 3     |
-> |dog_name| String (64)   | AC3F7612                | Kitty |
+|Name	 | Type (length) | Address in RAM (Memory) | Value |
+|--------|---------------|-------------------------|-------|
+|dog_age | int (8)       | AC3F760D                | 3     |
+|dog_name| String (64)   | AC3F7612                | Kitty |
 >
 > Before a program is run, the computer scans the program to create this look up table of all the variables. Once the computer converts the variable name into an address the computer doesn't pay attention to the name again. Generally the details about how a variable works in a computer are not terribly important until we get to higher level programming concepts.
 
