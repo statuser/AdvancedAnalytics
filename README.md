@@ -1,4 +1,4 @@
-# AdvancedAnalytics
+# Advanced Analytics
 Class materials for Advanced Analytics Class
 
 ## Chapter 1
