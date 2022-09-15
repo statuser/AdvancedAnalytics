@@ -46,12 +46,12 @@ The name of the variable is the human readable method for referring to a specifi
 > 
 > Variables are stored in a table like structure that holds:  
 > Example of Variable storage  
-
-|Name	 | Type (length) | Address in RAM (Memory) | Value |  
-|--------|---------------|-------------------------|-------|  
-|dog_age | int (8)       | AC3F760D                | 3     |  
-|dog_name| String (64)   | AC3F7612                | Kitty |  
-
+>  
+> |Name	 | Type (length) | Address in RAM (Memory) | Value |  
+> |--------|---------------|-------------------------|-------|  
+> |dog_age | int (8)       | AC3F760D                | 3     |  
+> |dog_name| String (64)   | AC3F7612                | Kitty |  
+> 
 > Before a program is run, the computer scans the program to create this look up table of all the variables. Once the computer converts the variable name into an address the computer doesn't pay attention to the name again. Generally the details about how a variable works in a computer are not terribly important until we get to higher level programming concepts.
 
 Naming variables is one of the hardest things about programming.  You want them to be meaningful and descriptive, but not too long or specific.  That being said don't get hung up on finding the perfect name.  It is really easy to change later and the computer doesn't care.
@@ -62,15 +62,15 @@ Here are some basic naming rules that you should follow:
 2. Variable names serve as the main source of information about what your code does. The ideal to strive for is that the code is "self-documenting" meaning that the code does not require any additional comments to explain its purpose or procedure. This does not mean that you should not write comments. It simply means that comments should be reserved for why you did a certain thing rather than what is going on. 
 ##### Names Example
 ```python
-	da = 3
-	ha = da * 7
-	print(ha)
+da = 3
+ha = da * 7
+print(ha)
 ```
 Compare this to: 
 ```python			
-	dog_age = 3
-	human_equiv_age = dog_age * 7
-	print(human_equiv_age) 
+dog_age = 3
+human_equiv_age = dog_age * 7
+print(human_equiv_age) 
 ```
 3. Variables names should start with a letter or "_" and may contain letters, number, or underscores. (Applies to Python only)
 4. Use variable names for everything in your code. (Even if they will never change). A number that is not assigned to a variable name is often called a "magic number." Strings can have a similar problem. Avoid magic variables even when the number is a fixed and known constant.
@@ -80,14 +80,14 @@ See the example in Rule 2 - The "7" on the second line is a magic number. We sho
 Another example is often see when computing the area of a circle. The formula is area = π * r^2. We could write this as: 
 
 ```python			
-	area = 3.14 * radius**2
+area = 3.14 * radius**2
 ```	
 
 It would be better as: 
 
 ```python			
-	pi = 3.14
-	area = pi * radius**2
+pi = 3.14
+area = pi * radius**2
 ```			
 
 ### Type
