@@ -1,25 +1,25 @@
 # Class Purpose
 
-Start programming in Python by learning about variables, boolean expressions, and branching.  We are workign toward our first project which will be building a game of "Go Fish".  
+Start programming in Python by learning about variables, boolean expressions, and branching.  We are working toward our first project which will be building a game of "Go Fish".  
 
 # Class Outline
 
 1. Variables
-	- What they are for
-	- Naming Rules
-	- Variable Types
-	- Variable Values
-		- Bare Types - Literals
-		- Result of an expressions
+   - What they are for
+   - Naming Rules
+   - Variable Types
+   - Variable Values
+	 - Bare Types - Literals
+	 - Result of an expressions
 2. Boolean Expressions
-	- Booleans represent true or false values
-	- True and False are the foundation of how computers work
-	- Booleans allow us to compare different values
-	- Compound boolean expressions
+   - Booleans represent true or false values
+   - True and False are the foundation of how computers work
+   - Booleans allow us to compare different values
+   - Compound boolean expressions
 3. Branching
-	- Allow a computer program to adapt to input
-	- if, else, and elif
-	- Respond to a boolean expression
+   - Allow a computer program to adapt to input
+   - if, else, and elif
+   - Respond to a boolean expression
 	
 # Class Notes
 
