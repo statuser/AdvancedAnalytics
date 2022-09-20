@@ -2,5 +2,5 @@ theme: minima
 header_pages:
  - README.md
 author:
- name: John Howell
+ name: "John Howell"
  email: "john_howell@byu.edu"
