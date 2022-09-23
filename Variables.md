@@ -1,8 +1,10 @@
-# Class Purpose
+# Variables, Boolean Expressions, and Branching
+
+## Class Purpose
 
 Start programming in Python by learning about variables, boolean expressions, and branching.  We are working toward our first project which will be building a game of "Go Fish".  
 
-# Class Outline
+## Class Outline
 
 1. Variables
    - What they are for
@@ -21,9 +23,9 @@ Start programming in Python by learning about variables, boolean expressions, an
    - if, else, and elif
    - Respond to a boolean expression
 	
-# Class Notes
+## Class Notes
 
-## Variables 
+### Variables 
 Recall the computers only do 4 things:
 1. Input Information
 2. Store Information
@@ -38,10 +40,10 @@ Variables are like buckets for storing information in a computer.  The term vari
 2. Value
 3. Type
 
-### Name
+#### Name
 The name of the variable is the human readable method for referring to a specific piece of data.  The name of the variable is arbitrary from a computers perspective.  The computer just requires that they be unique and consistent.
 
-> #### How computers use variables
+> ##### How computers use variables
 > When a program is run, the computer will convert all variables names into a numeric code that refers to a specific address in RAM.  Just like physical addresses, computer addresses refer to a specific physical location. Because each location can only store one specific thing, variables can only store a single piece of information.  
 > 
 > Variables are stored in a table like structure that holds:  
@@ -90,7 +92,7 @@ pi = 3.14
 area = pi * radius**2
 ```			
 
-### Type
+#### Type
 A type refers to the type of information that a variable stores. Think of this as python trying to figure out whit size bucket to get for the specific information it is going to hold.
 
 Python has 4 basic variable types:
@@ -124,7 +126,7 @@ str ( . )
 
 Python also allows you to make your own types and also contains some lesser used ones. (More about this later)
 
-### Value
+#### Value
 
 A variable can only hold a specific piece of information, but when we create a variable we can either assigned to be a bare value called a "literal" or an expression. (i.e. sum = 1+2, this is like Excel where we can either type a value into a cell or use a formula.)  Only the result of the expression is store in a variable and the expression is resolved before the variable is stored.
 
@@ -156,7 +158,7 @@ human_age = dog_age * dog_to_human_conversion # There is an error on this line. 
 print("Your dog " + dog_name + " would be " + human_age + " years old if they were a human.")
 ```
 
-#### Sidebar - Python Errors
+##### Sidebar - Python Errors
 There are three types of errors in programming:
 1. Syntax errors
 2. Logic Errors
@@ -168,9 +170,9 @@ For Example:
 7number = "Seven"
 ```
 produces the following output:
->File "<stdin>", line 1
->  7number = "Seven"
->  ^
+>File "<stdin>", line 1  
+>  7number = "Seven"  
+>  ^  
 >SyntaxError: invalid decimal literal
 
 If we read the error message (the last line) We can see that we have a syntax error and a description of what Python things the error is.  In this and many cases the description is not very helpful.  By the two line above will point to the exact place in the code that the error was found.  Oh yeah, variables can't start with a number.
@@ -203,7 +205,7 @@ Uh Oh!  We have another error.  This is the third type of error - a Runtime erro
 
  
 
-## Boolean Expressions
+### Boolean Expressions
 
 Boolean variables are one of the fundamental types in programming. Boolean variables represent a True or False. These variables form the foundation of how computers work. Remember that all information in a computer is stored as a on/off. In addition the basic building blocks of computers - circuits - are all about making decisions based on these on off values. The other thing to keep in mind is that computers can only make binary decisions. Even if a computer is choosing between three things, it evaluates each choice as a set of pairs. Often this is handled as a cascade. Check the first condition, then check a second condition and so forth.
 
@@ -236,7 +238,7 @@ True < False
 
 As you can see, you can compare strings and boolean values. With strings it compares them based on alphabetical order, numbers are compared numerically. Is there anything that surprised you in these comparisons?
 
-### Compound Boolean Expressions
+#### Compound Boolean Expressions
 
 Many times you will want to test against multiple conditions or your code will read better if you can reorganize the boolean logic. Compound expressions allow you to do this. There are three operators for compound boolean expressions. This only apply to boolean values and are executed after all the other logic is resolved. The expressions are:
 
@@ -288,7 +290,7 @@ Is the result of this expression True or False. Use parenthesis to make things c
 not (True) or (True and False)
 ``` 
 
-## Branching
+### Branching
 
 So far the programs that we have written aren't very interesting. They simply go through a series of steps without making any decisions or following different code paths. think about an automated trading program:
 
