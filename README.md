@@ -21,3 +21,5 @@ Python Programming
 [Introduction to Computers (*Incomplete)](Programmingintoduction.md)
 
 [Variables, Boolean Expressions, and Branching](Variables.md)
+
+[Looping](Loops.md)
