@@ -1,4 +1,4 @@
-# Loop
+# Lists
 
 ## Class Purpose
 
@@ -143,32 +143,35 @@ dice = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 index = 0
 length = len(dice)
 while index < length:
-	dice[index] = random.randInt(1,6) # Generates a random integer between 1 and 6 inclusive
+	dice[index] = random.randint(1,6) # Generates a random integer between 1 and 6 inclusive
 	index = index + 1
 ```
 
 This will take each item in the dice list and generate a random number between 1 and 6.  Think about what this code would look like without lists:
 ```python
-dice1 = random.randInt(1, 6)
-dice2 = random.randInt(1, 6)
-dice3 = random.randInt(1, 6)
-dice4 = random.randInt(1, 6)
-dice5 = random.randInt(1, 6)
-dice6 = random.randInt(1, 6)
-dice7 = random.randInt(1, 6)
-dice8 = random.randInt(1, 6)
-dice9 = random.randInt(1, 6)
-dice10 = random.randInt(1, 6)
+dice1 = random.randint(1, 6)
+dice2 = random.randint(1, 6)
+dice3 = random.randint(1, 6)
+dice4 = random.randint(1, 6)
+dice5 = random.randint(1, 6)
+dice6 = random.randint(1, 6)
+dice7 = random.randint(1, 6)
+dice8 = random.randint(1, 6)
+dice9 = random.randint(1, 6)
+dice10 = random.randint(1, 6)
 ```
 The second set of code repeats itself many more times.  If you have an error in your code you would have to change it in 10 places instead of in one place like you would in the first set of code.
 
 One of the key principles of computer programming is "Don't repeat yourself."  Lists help us do that.
 
-Preforming an operation on each item of a list is such a common task that nearly all programming languages have implemented a shortcut.  We call this "iterating" over a list.  In Python it looks like: ```python
+Performing an operation on each item of a list is such a common task that nearly all programming languages have implemented a shortcut.  We call this "iterating" over a list.  In Python it looks like: 
+
+```python
 dice = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 for die in dice:
-	die = random.randInt(1,6)
+	die = random.randint(1,6)
 ```
+
 This greatly reduces the amount of "boilerplate" code that you have to write and as you become familiar with the syntax feel much easier to read. For loops are by far the most common form of looping.  It is actually pretty rare to see a while loop in production code.  This is mainly due to the shorter code and the lower potential for for bugs related to updating the index.
 
 Sometimes it is easier to work with the index numbers rather than each item in a list.  There is a special Python way of handling this. There is a command `range` that creates a list of numbers. For example if you to create a list of the first five numbers you would use:
