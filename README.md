@@ -23,3 +23,5 @@ Python Programming
 [Variables, Boolean Expressions, and Branching](Variables.md)
 
 [Looping](Loops.md)
+
+[Lists and For Looops](Lists.md)

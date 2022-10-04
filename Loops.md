@@ -13,7 +13,7 @@ Understand how to repeat programming instructions multiple times in Python.
 
 ### Code Blocks
 
-Code blocks are related blocks of code that should be executed as a unit.  They are commonly seen in the statements following an `if` statement, loop, or as a function body.  Unlike many other languages, Python uses intendation to delineate a block of code.  Each block of code is indented, usually by 4 spaces, when the indentation changes, the block of code ends.  Code block must be 1 or more lines long.
+Code blocks are related blocks of code that should be executed as a unit.  They are commonly seen in the statements following an `if` statement, loop, or as a function body.  Unlike many other languages, Python uses indentation to delineate a block of code.  Each block of code is indented, usually by 4 spaces, when the indentation changes, the block of code ends.  Code block must be 1 or more lines long.
 
 ```python
 # This is the parent block of code
@@ -78,4 +78,5 @@ print("We finished.")
 ```
 
 Beware the infinite loop! This is a programming error that is so common it has its own name.  It occurs when a loop condition is never satisfied.  To stop a program that is caught in an infinite loop you have to force quit.  (Use CTRL+C to force quite a python command like program.)
+
 
