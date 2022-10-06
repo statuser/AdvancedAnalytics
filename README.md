@@ -25,3 +25,5 @@ Python Programming
 [Looping](Loops.md)
 
 [Lists and For Looops](Lists.md)
+
+[Functions](Functions.md)
