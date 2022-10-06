@@ -74,6 +74,7 @@ You can tell that these are functions because they have a name followed by a set
 Most of what you will be doing in programming is calling functions that other people have written.  Your job is thus one of finding a function that does what you want, figuring out how to call it, and combining this function with other functions into a program.
 
 Functions are a lot like variables
+
 | Variables | Functions         |
 | ---       | ---               |
 | Name      | Name              |
@@ -131,12 +132,12 @@ else:
 
 the "bark." prefix to the variables is just to denote that the variables only apply to this specific bit of code that was part of the bark function.  More on this later today.
 
-##### Encapsulation and Abstraction
+### Encapsulation and Abstraction
 Functions serve two additional purposes:
 - Encapsulation - Code is logically grouped into a compact set of actions that should always be preformed together.  Code that is not part of the group cannot access or change code in the group and the code in the group should not affect code outside the grouping.
 - Abstraction - The process of collapsing a set of instructions into a higher level concept that refers to the individual details. Allows you to think at a higher level than a computer instruction.
 
-###### Abstraction
+*Abstraction*
 Example: Make a sandwich
 Highest level of abstraction:
 ```python
@@ -174,7 +175,7 @@ The higher the level of abstraction, the easier a problem is to reason about, bu
 
 One of the keys to being a good programmer is being able to think at multiple levels of abstraction and then work at the appropriate level for the current problem. That is one of the keys to pseudo-code.  You start at a high level of abstraction and then slowly expand until you are at a level where it makes sense to start actual programming.  Pseudo-code is so effective because it aids in moving up and down the abstraction ladder.
 
-###### Encapsulation
+*Encapsulation*
 One of the primary principles of encapsulation is the idea of "variable scope." We have briefly touched on it before, but it becomes essential to understand when working with functions.  You can define variables inside a function, but they are said to be "local" because they do not exist outside the function.
 
 Function parameters are technically local variables.  They are just defined and assigned during the function call instead of with the = operator.
@@ -252,24 +253,25 @@ Your functions should either be written to return a result or perform a side-eff
 You return a value from a function with the `return` statement:
 ```python
 def get_bark(weight):
-if weight > 20:
-	return 'WOOF WOOF'
-else:
-	return 'woof woof'
+	if weight > 20:
+		return 'WOOF WOOF'
+	else:
+		return 'woof woof'
 ```
 
 A function ends immediately after it reaches a return statement.  Nothing after the statement is executed.  While I don't recommend this code, it is equivalent to the previous code:
 ```python
 def get_bark(weight):
-if weight > 20:
-	return 'WOOF WOOF'
-return 'woof woof'
+	if weight > 20:
+		return 'WOOF WOOF'
+	return 'woof woof'
 ```
 
 When you call a function with a return statement, it should be assigned to a variable or immediately used.  Functions called for side effects are almost always on a line by themselves.
 
 #### Special Python Considerations
 1. You can give functions default values:
+
 ```python
 def greet(name, message='You rule!')
 	print('Hi', name + '.', message)
