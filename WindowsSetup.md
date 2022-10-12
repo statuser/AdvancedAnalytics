@@ -138,22 +138,6 @@ git config --global user.email "<Your Email>"
 
 This will set up git so that your name and email are attached to to each commit you make automatically.  This way we can tell who made each change to the code.  You can override this on a commit by commit basis, but if we are going to change somebody else's code it is nice to be able to easily identify and contact the person originally responsible for the code so we can make sure we don't introduce a bug or break a feature that they have added.
 
-### Set up an account on GitHub
-
-You will need an account on GitHub to download and check in the source code for our project.  You can create an account at: [Sign up for Github](https://github.com/signup?ref_cta=Sign+up).
-
-You should also go through the [Quickstart on Github Guides](https://docs.github.com/en/get-started/quickstart) to get an understanding of git and GitHub.
-
-We will checkout the Advanced Analytics Project later in the tutorial.
-
-In order to use GitHub from your command line you will need to authenticate by running the following command.  This will have you authenticate using a web browser the first time you connect and then store a computer specific password so you don't have to authenticate again in the future.  To do this run the following command:
-
-```bash
-git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
-```
-
-[Logging in to GitHub from the commandline](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-
 ## Set up a development database
 
 For the final program we will use a full database program like Postgres or MySQL.  Those are a little heavy for development work so for now we will use a lightweight database called SQLite.  This uses regular files to store the databases and can easily be accessed.  SQLite as a fully featured database for single user access, but it is not appropriate when multiple people may be accessing the database at the same time. 
@@ -273,6 +257,30 @@ EOT
 ```
 
 You will need to reboot the Ubuntu shell again.
+
+
+When you work on a project you will want to create a virtual environment so you can isolate the packages that you use for the project from the rest of your Python environment.  This is an advanced topic and we will not need it to learn Python.
+
+```bash
+mkvirtualenv <Project Name>
+```
+
+## The following stesp are only necessary if you wish to work on the Advanced Analytics Project
+
+### Set up an account on GitHub
+
+You will need an account on GitHub to download and check in the source code for our project.  You can create an account at: [Sign up for Github](https://github.com/signup?ref_cta=Sign+up).
+
+You should also go through the [Quickstart on Github Guides](https://docs.github.com/en/get-started/quickstart) to get an understanding of git and GitHub.
+
+We will checkout the Advanced Analytics Project later in the tutorial.
+
+In order to use GitHub from your command line you will need to authenticate by running the following command.  This will have you authenticate using a web browser the first time you connect and then store a computer specific password so you don't have to authenticate again in the future.  To do this run the following command:
+
+You will not need to login to Github for the 
+[Logging in to GitHub from the commandline](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+
+### Clone the project repository
 
 Before we activate our virtual environment we should clone the project repository.  There is a directory structure that I like to use that will be demonstrated in the code below.  Feel free to modify the directories below to match your preferences.  I like to have a "src" directory in my home directory that contains all my programming projects.  With in the source directory I have a folder for each individual project that is managed as a git repository.  
 
