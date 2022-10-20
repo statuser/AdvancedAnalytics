@@ -20,7 +20,7 @@ Develop an understanding and apply the principles of the design thinking process
 
 Much of this material was pulled from [CareerFoundry](https://careerfoundry.com/en/tutorials/ux-design-process-for-beginners/introduction-to-ux-design/)
 
-### An Introduction to User Experience Design
+## An Introduction to User Experience Design
 
 What is UX Design? - "The process of designing great digital product experiences that work well for the people who use those products."
 
@@ -60,7 +60,7 @@ The Design Thinking Process formalizes a method for arriving and reasonable solu
 [![Design Process Video](https://img.youtube.com/vi/9lljOVfOi6o/default.jpg)](https://youtu.be/9lljOVfOi6o)
 
 
-### Empathize
+## Step 1 - Empathize
 
 The fist step in the design thinking process is developing empathy for the user.  The word empathize is specifically chosen to highlight that this step is about more than just understanding the user.  In the design process you will be making many decisions on behalf of the user without being able to consult with the user at each step.  In order to make those decisions accurately you will need to not only understand what the user needs and wants, but you will need to under stand their motivations, background, habits, frustrations, environment, and goals.  
 
@@ -105,11 +105,47 @@ The second problem that I have seen with personas is that people will often fill
 
 To avoid some of these problems it it is usually a good idea to create multiple personas for and given project.  Using multiple persona allows you to reflect the real diversity that is present in your user base.  You should also be intentional about having your personas reflect a diverse background of gender, race, age, culture, etc.  
 
-... More to come
-
 #### User Journey Maps
 
+User Journey maps are a visual description of how users move through the journey of using the product or a part of the product.  They will capture important motivation and goals, steps that need to be completed, and identify the customers desired outcomes.  One thing to keep in mind about user journey maps is that they should begin with motivations that happen before a user interacts with the map and end after the app is closed.  This keeps the focus of the design on the user rather than simply on the app itself and opens you up to consider a wider variety of solutions to the problems that the user faces.
+
+The main use of a customer journey map for UX designers is to understand the role the product places in a customers life and experiences.  It will provide context and background that will help the designer empathize with the customer and identify pain points, road blocks, and opportunities.
+
+Because of the type of information a customer journey map usually contains, they are generally not used before a company has actual customers. However once a customer journey map is feasible it can be useful for many different activities in a firm including helping the CEO and executive team understand and focus on the customer, assisting marketing in understanding how to better manage the customer experience, or training front line works. 
+
+For more details on how to create a map check out [7 Simple Steps to Build a Customer JOurney Map](https://careerfoundry.com/en/blog/ux-design/how-to-make-customer-journey-map-with-template/)
 
 ### Exercise - Create a user persona
+
+Using the template from CareerFoundry [Download Template](https://images.careerfoundry.com/public/resources/persona_template_ux_design_careerfoundry.pdf) create a Customer Persona for our Career Search app.  
+
+1. As a class decide on how many user personas we should create.  (Remember having more than one persona is a good idea.)
+2. As a class discuss different customer segments that we would like to target.
+3. Divide up in to groups of 3-4
+4. Assign each group a specific target and decide on general demographics for those targets.  Doing this together will ensure that our user personas properly reflect the diversity of our target market.
+5. Get together with your group and finish fleshing out the user persona.  This should take about 30-45 minutes if you work quickly.
+
+## Step 2 - Define
+
+The goal of the define step is to articulate the user's problem that we are intending to solve with the product we are designing.  This is very similar to defining the problem that you talked about heavily in analytics.  With wicked problems you may need to make multiple cracks at this and don't be afraid to redefine the problem multiple times as you move through the design process, receive feedback from users, and iterate on potential design solutions.  
+
+There are a number of different techniques that we can use to define the problem. One of the most common in design circles is to define the problem as a *"How Might We..." (HMW)* question.  This is usually phrased as "How might we ..."  For example if you are interested in designing an app to help parents find educational and fun activities to do with their children you might define the problems as: "How might we assist parents on  finding a fun and educational activity to do with their young children?"  In keeping with step one, empathize, HWM questions should be customer centered and reflect customer problems rather than business constraints. 
+
+It would also be perfectly reasonable to apply the TOSCA framework from [Cracked It: How to solve big problems and sell solutions like top strategy consultants](https://www.amazon.com/Cracked-problems-solutions-strategy-consultants/dp/3319893742/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1666215115&sr=8-2-spons).
+
+TOSCA stands for:
+- *T* - Troubles: What are the symptoms or troubles that motivated the search for a solution?
+- *O* - Owner: Who is the owner of the problem? This is the person that will evaluate the solution.
+- *S* - Success Criteria - How will we know that the problem is solve?  This often takes includes a time frame and will answer a question such as "Imagine it is one year from today and we are meeting again. What would the situation be like and how would be know it is time to celebrate?"
+- *C* - Constraints - What are the factors that will influence the ways that the problem can be solved.  These could be things like time or monetary budgets, business goals, legal or ethical requirements, etc.
+- *A* - Actors - Who are the individuals and stakeholders that are impacted by or can impact the problem.
+
+With wicked problems, creating a problem statement is often very difficult.  The problems are often poorly understood and difficult to articulate.  The good thing is that it is not as important to have a perfect problem statement in the design thinking approach.  You will revisit your problem statement multiple times as you iterate on the design and learn more about the user, their needs, wants, and preferences.
+
+## Step 3 - Ideate
+
+The main objective of this step is to generate a large and diverse set of potential solutions to the problem as defined.  In the ideate phase we are shooting for quantity over quality.  At the end of the phase we will start filtering ideas to select 1-2 of our best ideas, but you should be careful to to censor or filter ideas too soon.
+
+One of the core principles in the ideate phase is that we want to take to time to carefully examine our assumptions a
 
 [![Wireframing Tutorial](https://img.youtube.com/vi/qpH7-KFWZRI/default.jpg)](https://www.youtube.com/vi/qpH7-KFWZRI)
