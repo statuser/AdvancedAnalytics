@@ -146,6 +146,37 @@ With wicked problems, creating a problem statement is often very difficult.  The
 
 The main objective of this step is to generate a large and diverse set of potential solutions to the problem as defined.  In the ideate phase we are shooting for quantity over quality.  At the end of the phase we will start filtering ideas to select 1-2 of our best ideas, but you should be careful to to censor or filter ideas too soon.
 
-One of the core principles in the ideate phase is that we want to take to time to carefully examine our assumptions a
+One of the core principles in the ideate phase is that we want to take to time to carefully examine our assumptions and intuition.  Many times the ideate phase will help you think more clearly about the research problem and solution that you have identified.  
+
+When you are ideating you need to make sure that you separate out the process of generating ideas from filtering ideas.  If you are constantly evaluating a design to try to decide if it is a good or bad idea you will artificially censor your self and generate fewer ideas overall.  
+
+You are familiar with many of the methods used to ideate.  The best method is going to be highly context dependent.  I often find it helpful to create a little space between defining the problem and generating ideas.  I often define problems with a notion of what the solution will be when writing the problem definition down.  This creates some bias towards the first idea being generated as being the right one.
+
+Some methods of generating ideas:
+
+- Brainstorming: This is exactly what you would think.  You simply list the ideas on a shared whiteboard or other workspace with everybody throwing out ideas as they occur.
+- Bodystorming: This is brainstorming with a twist.  Instead of sitting around a conference table, you recreate the environment and context where the problem occurs.
+- Brainwriting: This is a journaling or free writing exercise.  Similar to brainstorming, but is an individual exercise where ideas are generated individually and then shared.  It avoids some of the group think problems with brainstorming.
+- Brainwalking: This is Brainwriting only you incorporate movement by placing sheets of paper strategically around the room and have individuals move from station to station, read the paper and then add ideas.  
+- Mindmapping: Used during or after a brainstorming session to create a visualize the connections between different ideas.
+- SCAMPER: An acronym for Substitute, Adapt, Combine, Modify, Put to other users, Eliminate, Rearrange or reverse.  This is a common industry practice when you have an existing product that you are trying to refine and improve.
+- Crazy Eights: This is a sketching exercise where you rapidly sketch out eight different products.  This is most usually if the design is going to be visual like the UI of a product.  
+
+A couple of things to keep in mind.  When ideating in a group there is a strong social bias that can interfere with the process.  The first is called social desirability bias.  People may filter thought because they are afraid of how they will be perceived by the group.  This leads to fewer ideas overall and a great idea could be missed.  The second problem is groupthink.  As social creatures humans have a tendency to change their thinking to reflect what they perceive as the dominate position of the group they are a part of.  This can greatly limit the range of ideas that can be created.  The final problem is one of participation.  In any group setting there are dominate and less dominate participants.  Group brainstorming sessions are classic cases where less dominate individuals are underrepresented.  It takes special skill to make sure that they are heard from and represented.  
+
+One way to avoid many of these problems is to combine individual exercises with group discussion.  By starting with an individual exercise, you make sure that everybody participates without influencing each other's opinions too much.  You can then start a group brainstorming session with a foundation and a set of ideas that you can riff on.
+
+### Exercise - Crazy 8's 
+
+1. Select a screen from our app.  (I would recommend that you select a reporting screen since there will be many of those.)
+2. Fold 1 or 2 sheets of paper into quarters.  (You will create 8 sketches total.  With one sheet of paper you will use both sides.)
+3. Review your problem statement 
+4. Set the time for 1-3 minutes.  In that time sketch out one idea for how that screen of your app would look.  It should be messy.  You are going to be sketching very quickly.
+5. Reset and then repeat step 4 7 more times.  You should end up with 8 total sketches.  Most of them will be bad, but hopefully there are 1-2 good ideas in the mess.
+6. Take a few minutes to review your ideas and select your best one or 2 to present to the class.  
+
+The final step in the ideate process is filtering your ideas.  This is where you need to start getting critical.  Does the idea meet the objective as established in the define step?  Can it be reasonably implemented in the time and budget allocated?  Does it create additional issues or questions?  Will it delight the user?
+
+Once you have a top 1-2 ideas we can move on the the next step...prototype.
 
 [![Wireframing Tutorial](https://img.youtube.com/vi/qpH7-KFWZRI/default.jpg)](https://www.youtube.com/vi/qpH7-KFWZRI)
