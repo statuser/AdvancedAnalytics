@@ -46,7 +46,7 @@ The User Experiences designer accomplishes this by:
 
 One way UX designers can accomplish much of their work by following the design thinking approach.  The design thinking approach is an iterative framework that outlines specific steps to crafting user centered designs.  The process is iterative and may be non-linear as you bounce between different steps in the process or revisit earlier steps and situations and changing understanding dictate.
 
-Steps steps in the Design Thinking process are:
+The steps in the Design Thinking process are:
 
 ![Design Thinking Process](./DesignThinkingProcess.jpeg)
 
@@ -179,4 +179,58 @@ The final step in the ideate process is filtering your ideas.  This is where you
 
 Once you have a top 1-2 ideas we can move on the the next step...prototype.
 
+## Step 4 - Prototype
+
+Prototype is the process of designing an app or product that can be shown to users to receive their feedback and evaluate the usability of the design.  A prototype does not necessarily be need to be functional and is different from and MVP.  Most of the time a prototype will not be functional, but will be used to test the visual aspects of the design.  
+
+Prototypes can be created at different levels of detail. They can be created using paper sketches or digital tools. The stage of the development process and the audience that is going to be reviewing the designs should dictate what type of prototype you create.
+
+When speaking of prototypes we generally will be thinking about prototypes as:
+
+- Low-fidelity
+- Mid-fidelity
+- High-fidelity
+
+![Prototyping Fidelity vs. Time](https://marvel7077.wpengine.com/wp-content/uploads/2017/02/0-9QR7NfRtWu7xTSH1.png)
+
+For internal or personal projects Lo-fi prototypes are generally sufficient.  These are commonly made using a simple sketch on paper.  The goal of a sketch is to be able to quickly receive feedback on the major parts of a design.  You can ensure that you have included the important features and that the flow of the app makes sense and is reasonable. In many cases using a low-fidelity prototype is more useful than a higher fidelity prototype.  With a low fidelity prototype you can avoid discussions around visual design characteristics such as fonts, colors, and imagery before you are ready to address them.  The higher the fidelity of the prototype the more likely individuals are to respond to the visual elements of the design rather than the functional elements of the design.
+
+As the process progresses or the needs of the users increase you will be moving up the prototyping scale to more detailed prototypes.  As some point you will likely want to move into digital prototypes using digital software.  You can mimic basic user interactions and quickly mock up the visual elements of a design using specialized software.  The two software products that are most commonly used right now are Figma (recently purchased by Adobe for > $20 Billion) and Adobe XD.  Both products are very similar web-based collaborative design software products like google docs.  These software products are fairly easy to use with with a mild learning curve.  If you are planning to do a lot of UX or UI design it would be worth your time investing in learning these products.  
+
+Short/quick introduction to Figma:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FTFaQWZBqQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Longer more detailed introduction:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kbZejnPXyLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Short/quick Adobe XD tutorial:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JttI6YpmPGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Longer Adobe XD Tutorial:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f2K1jmjj5pM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+These tool will let you go from a quick sketch to a nearly function design with animations, clickable buttons, and app simulations on an actual phone or web browser.  This is the closest that you can get to actually building a coded app without doing any programming.  
+
+These tools are especially useful if you are presenting a design to a client or want to test a project with an end user.
+
+> #### - Wireframing  
+> Technically there is a difference between a prototype and a wireframe, but the difference is not important.  The terms are used interchangeably by most people.  The main difference is that with wireframing you are usually interested in the flow of an app from screen to screen while prototypes are more focused on the design features of individual pages.  Another way to think about this is that wireframes are low fidelity representations, mockups are medium fidelity representations and prototypes are high fidelity representations.  In my experience the terms are often used interchangeably and the exact definitions are not important.  
+
+For a longer introductions to wireframing and prototyping check out this video:
+
 [![Wireframing Tutorial](https://img.youtube.com/vi/qpH7-KFWZRI/default.jpg)](https://www.youtube.com/vi/qpH7-KFWZRI)
+
+
+### Exercise - Prototype your page
+
+In the ideate phase you should have created one or two designs that you feel solve the users problem and are worth investigating further.  We are going to start with a paper sketch to make things easy.
+
+1. Download and print the pdf file (from uiprint.co) (iPhone Prototyping Templates)[uiprint-iphone-2up.pdf]
+2. Sketch a first draft of the screen that you have selected based on the ideate phase
+3. Using the second template re-sketch your design to have a clean version
+
+The reason we have two up is so that you can sketch out a first draft and then use the second template to sketch out a second draft.  This exercise should take about 10-15 minutes.
+
+## Step 5 - Test
+
+One of the main reasons we develop a prototype is so that we can test our design ideas with the user.  
