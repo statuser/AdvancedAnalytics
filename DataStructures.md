@@ -33,7 +33,7 @@ product = ("Apple", 1.75)
 print("A(n)", product[0], "costs $", product[1])
 ```
 
-Unlike lists however you can assign a new value to a specific element in a tuple.  This tuple lives and dies together as a single piece of information.  In programmer speak we call this property "immutable".  If you want to change the value of a field in a tuple you will have to create a new tuple.
+Unlike lists however you cannot assign a new value to a specific element in a tuple.  This tuple lives and dies together as a single piece of information.  In programmer speak we call this property "immutable".  If you want to change the value of a field in a tuple you will have to create a new tuple.
 
 The process of creating a tuple is called "packing" a tuple.  You can also "unpack" a tuple to turn it back into its raw values.
 
