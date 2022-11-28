@@ -27,3 +27,13 @@ Python Programming
 [Lists and For Looops](Lists.md)
 
 [Functions](Functions.md)
+
+[Data Structures](DataStructures.md)
+
+[Data Science Libraries](DataScienceLibraries.md)
+
+## Chapter 4
+
+Analytics, UX, and UI Design
+
+[Design Thinking Process](DesignThinkingProcess.md)
